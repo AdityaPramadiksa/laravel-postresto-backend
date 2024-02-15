@@ -67,7 +67,7 @@
     <script src="{{ asset('library/moment/min/moment.min.js') }}"></script>
     <script src="{{ asset('js/stisla.js') }}"></script>
 
-{{-- alert_delete --}}
+{{-- alert_delete_users --}}
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script type="text/javascript">
     $(function(){
@@ -98,8 +98,12 @@
                                 text: "Your data has been deleted.",
                                 icon: "success"
                             }).then(() => {
-                                // Redirect to desired page
+                                // Redirect to desired page users
                                 window.location.href = "{{ route('users.index') }}";
+                                // Redirect to desired page products
+                                window.location.href = "{{ route('products.index') }}";
+                                 // Redirect to desired page categories
+                                 window.location.href = "{{ route('categories.index') }}";
                             });
                         }
                     });
