@@ -39,7 +39,7 @@ return [
     | application's "username" field. Typically, this might be the email
     | address of the users but you are free to change this value here.
     |
-    | Out of the box, Fortify expects forgot password and reset password
+    | Out of the box, Fortify expects  password and reset password
     | requests to have a field named 'email'. If the application uses
     | another name for the field you may define it below as needed.
     |
